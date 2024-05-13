@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <formatVersion>7</formatVersion>
+    <include>./theme.xml</include>    
+    <view name="splash">
+
+        <image name="background" visible="true">
+            <pos>0.5 0.2</pos>
+            <roundCorners>0</roundCorners>
+            <maxSize>0.958 0.61</maxSize>
+            <origin>0.5 0</origin>                                    
+            <path>{game:thumbnail}</path>
+        </image>
+
+
+
+        <image name="background_extra" extra="true">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <zIndex>0</zIndex>
+            <visible>true</visible>
+            <color>404040</color>
+            <path>./_inc/images/bg_color.png</path>
+        </image>
+
+        <image name="imagegrid_background" extra="true">
+            <pos>0.5 0.19</pos>
+            <size>0.96 0.735</size>
+            <origin>0.5 0</origin>
+            <zIndex>1</zIndex>
+            <visible>true</visible>
+            <color>181818</color>
+            <path>./_inc/images/frame.png</path>
+        </image>
+
+
+
+        <text name="loadingText" extra="true">
+            <text>Loading</text>
+            <pos>0.200 0.945</pos>
+            <size>0.200 0.05</size>
+            <fontSize>0.035</fontSize>
+            <color>DDDDDD</color>
+            <visible>true</visible>
+            <forceUppercase>false</forceUppercase>
+            <fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
+            <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
+            <fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
+            <fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
+            <zIndex>55</zIndex>
+        </text>
+
+        <text name="label">
+            <color>DDDDDD</color>
+            <forceUppercase>false</forceUppercase>
+            <fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
+            <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
+            <fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
+            <fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
+            <zIndex>500</zIndex>
+        </text>
+
+    </view>
+
+</theme>

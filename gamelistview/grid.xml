@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+    <view name="grid">
+        <text name="gamename" extra="true">
+            <text ifSubset="filenames:no">{game:name}</text>
+            <text ifSubset="filenames:yes">{game:stem}</text>
+            <pos>0.031 0.198</pos>
+            <size>0.90 0.027</size>
+            <fontSize>0.026</fontSize>
+            <horizontalAlignment>left</horizontalAlignment>
+            <verticalAlignment>center</verticalAlignment>
+            <color>${secondaryColor}</color>
+            <letterCase>none</letterCase>
+            <fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
+            <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
+            <fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
+            <fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
+            <zIndex>30</zIndex>
+        </text>
+
+        <imagegrid name="gamegrid">
+            <pos>0.023 0.225</pos>
+            <size ifSubset="factbox:yes">0.648 0.692</size>
+            <size ifSubset="factbox:no">0.900 0.692</size>
+            <margin>${grid.itemspacing.px}</margin>
+            <padding>0.01 0.01 0.01 0.01</padding>
+            <autoLayout>0 3</autoLayout>
+            <cellProportion>1.3</cellProportion>
+            <animateSelection></animateSelection>
+            <imageSource ifSubset="gridimage:image">image</imageSource>
+            <imageSource ifSubset="gridimage:thumbnail">thumbnail</imageSource>
+            <imageSource ifSubset="gridimage:marquee">marquee</imageSource>
+            <scrollbarColor>${secondaryColor}</scrollbarColor>
+            <scrollbarCorner>0.49</scrollbarCorner>
+            <scrollbarSize>0.005</scrollbarSize>
+            <scrollbarAlignment>right</scrollbarAlignment>
+            <autoLayoutSelectedZoom>1.04</autoLayoutSelectedZoom>
+        </imagegrid>
+
+        <gridtile name="default">
+            <backgroundColor>${backgroundColor}</backgroundColor>
+        </gridtile>
+
+        <gridtile name="selected">
+            <backgroundColor>${secondaryColor}</backgroundColor>
+        </gridtile>
+
+
+
+        <text name="md_description" ifSubset="factbox:yes">
+            <text>{game:desc}</text>
+            <pos>0.68 0.225</pos>
+            <size>0.290 0.285</size>
+            <alignment>left</alignment>
+            <horizontalAlignment>top</horizontalAlignment>
+            <color>${secondaryColor}</color>
+            <fontSize>0.020</fontSize>
+            <fontPath ifSubset="font:cabinbold">./_inc/fonts/Cabin-Bold.ttf</fontPath>
+            <fontPath ifSubset="font:couture">./_inc/fonts/couture-bld.otf</fontPath>
+            <fontPath ifSubset="font:nswitchui">./_inc/fonts/nswitchui.ttf</fontPath>
+            <fontPath ifSubset="font:gb">./_inc/fonts/gb.ttf</fontPath>
+            <zIndex>30</zIndex>
+        </text>
+
+        <image name="OtherMedia" extra="true" ifSubset="factbox:yes">
+            <pos>0.825 0.530</pos>
+            <origin>0.5 0</origin>
+            <path ifSubset="gridimage:image">{game:thumbnail}</path>
+            <path ifSubset="gridimage:thumbnail">{game:image}</path>
+            <path ifSubset="gridimage:marquee">{game:image}</path>
+            <maxSize>0.290 0.281</maxSize>
+        </image>
+
+        <video name="GameVideo" extra="true" ifSubset="factbox:yes">
+            <pos>0.825 0.530</pos>
+            <origin>0.5 0</origin>
+            <path>{game:video}</path>
+            <maxSize>0.290 0.281</maxSize>
+            <showSnapshotNoVideo>false</showSnapshotNoVideo>
+            <showSnapshotDelay>true</showSnapshotDelay>
+            <delay>1</delay>
+            <snapshotSource>thumbnail</snapshotSource>
+            <effect>none</effect>
+            <zIndex>30</zIndex>
+        </video>
+
+        <image name="badge_favorite_not" extra="true">
+            <pos ifSubset="factbox:yes">0.680 0.835</pos>
+            <pos ifSubset="factbox:no">0.932 0.225</pos>
+            <maxSize>0.038 0.08</maxSize>
+            <zIndex>30</zIndex>
+            <color>${backgroundColor}</color>
+            <visible>!{game:favorite}</visible>
+            <path>./art/badges/badge_favorite.svg</path>
+        </image>
+        <image name="badge_favorite" extra="true">
+            <pos ifSubset="factbox:yes">0.68 0.835</pos>
+            <pos ifSubset="factbox:no">0.932 0.225</pos>
+            <maxSize>0.038 0.08</maxSize>
+            <zIndex>30</zIndex>
+            <visible>{game:favorite}</visible>
+            <path>./art/badges/badge_favorite.svg</path>
+        </image>
+
+        <image name="badge_states_not" extra="true">
+            <pos ifSubset="factbox:yes">0.720 0.835</pos>
+            <pos ifSubset="factbox:no">0.932 0.305</pos>
+            <maxSize>0.038 0.08</maxSize>
+            <zIndex>30</zIndex>
+            <color>${backgroundColor}</color>
+            <visible>!{game:hasSaveState}</visible>
+            <path>./art/badges/badge_states.svg</path>
+        </image>
+        <image name="badge_states" extra="true">
+            <pos ifSubset="factbox:yes">0.720 0.835</pos>
+            <pos ifSubset="factbox:no">0.932 0.305</pos>
+            <maxSize>0.038 0.08</maxSize>
+            <zIndex>30</zIndex>
+            <visible>{game:hasSaveState}</visible>
+            <path>./art/badges/badge_states.svg</path>
+        </image>
+
+        <image name="badge_manual_not" extra="true">
+            <pos ifSubset="factbox:yes">0.760 0.835</pos>
+            <pos ifSubset="factbox:no">0.932 0.385</pos>
+            <maxSize>0.038 0.08</maxSize>
+            <zIndex>30</zIndex>
+            <color>${backgroundColor}</color>
+            <visible>!{game:hasManual}</visible>
+            <path>./art/badges/badge_manual.svg</path>
+        </image>
+        <image name="badge_manual" extra="true">
+            <pos ifSubset="factbox:yes">0.760 0.835</pos>
+            <pos ifSubset="factbox:no">0.932 0.385</pos>
+            <maxSize>0.038 0.08</maxSize>
+            <zIndex>30</zIndex>
+            <visible>{game:hasManual}</visible>
+            <path>./art/badges/badge_manual.svg</path>
+        </image>
+
+        <image name="badge_kidgame_not" extra="true">
+            <pos ifSubset="factbox:yes">0.800 0.835</pos>
+            <pos ifSubset="factbox:no">0.932 0.465</pos>
+            <maxSize>0.038 0.08</maxSize>
+            <zIndex>30</zIndex>
+            <color>${backgroundColor}</color>
+            <visible>!{game:kidGame}</visible>
+            <path>./art/badges/badge_kidgame.svg</path>
+        </image>
+        <image name="badge_kidgame" extra="true">
+            <pos ifSubset="factbox:yes">0.800 0.835</pos>
+            <pos ifSubset="factbox:no">0.932 0.465</pos>
+            <maxSize>0.038 0.08</maxSize>
+            <zIndex>30</zIndex>
+            <visible>{game:kidGame}</visible>
+            <path>./art/badges/badge_kidgame.svg</path>
+        </image>
+
+        <image name="badge_gungame_not" extra="true">
+            <pos ifSubset="factbox:yes">0.840 0.835</pos>
+            <pos ifSubset="factbox:no">0.932 0.545</pos>
+            <maxSize>0.038 0.08</maxSize>
+            <zIndex>30</zIndex>
+            <color>${backgroundColor}</color>
+            <visible>!{game:gunGame}</visible>
+            <path>./art/badges/badge_gungame.svg</path>
+        </image>
+        <image name="badge_gungame" extra="true">
+            <pos ifSubset="factbox:yes">0.840 0.835</pos>
+            <pos ifSubset="factbox:no">0.932 0.545</pos>
+            <maxSize>0.038 0.08</maxSize>
+            <zIndex>30</zIndex>
+            <visible>{game:gunGame}</visible>
+            <path>./art/badges/badge_gungame.svg</path>
+        </image>
+
+        <image name="badge_wheelgame_not" extra="true">
+            <pos ifSubset="factbox:yes">0.880 0.835</pos>
+            <pos ifSubset="factbox:no">0.932 0.625</pos>
+            <maxSize>0.038 0.08</maxSize>
+            <zIndex>30</zIndex>
+            <color>${backgroundColor}</color>
+            <visible>!{game:wheelGame}</visible>
+            <path>./art/badges/badge_wheelgame.svg</path>
+        </image>
+        <image name="badge_wheelgame" extra="true">
+            <pos ifSubset="factbox:yes">0.880 0.835</pos>
+            <pos ifSubset="factbox:no">0.932 0.625</pos>
+            <maxSize>0.038 0.08</maxSize>
+            <zIndex>30</zIndex>
+            <visible>{game:wheelGame}</visible>
+            <path>./art/badges/badge_wheelgame.svg</path>
+        </image>
+
+    </view>
+</theme>

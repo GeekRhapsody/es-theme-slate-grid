@@ -1,0 +1,21 @@
+<theme>
+   <variables>
+      <systemDescription>RetroBat is a software distribution designed for emulation and to be the easiest way to enjoy your game collection on your Windows computer. The supplied EmulationStation interface is fully functional and highly customizable. You can run all your games from it and search online for visuals to enhance the presentation of your collection.
+
+RetroBat allows you to download, update and configure the most renowned emulators directly from the interface. You will discover or rediscover the best games designed for consoles, arcades and computers released to date.
+
+No need to get lost in the options of a multitude of software, all the important options are integrated in the same unified interface.
+
+With RetroBat, you save time that you can use to play!</systemDescription>
+      <systemManufacturer>Kaylh</systemManufacturer>
+      <systemReleaseYear>2019</systemReleaseYear>
+      <systemReleaseDate>2019</systemReleaseDate>
+      <systemReleaseDateFormated></systemReleaseDateFormated>
+      <systemHardwareType>Frontend</systemHardwareType>
+      <systemColor>38b1de</systemColor>
+      <systemColorPalette1>ff00ff</systemColorPalette1>
+      <systemColorPalette2>FFFFFF</systemColorPalette2>
+      <systemColorPalette3>000000</systemColorPalette3>
+      <systemColorPalette4>A020F0</systemColorPalette4>
+   </variables>
+</theme>

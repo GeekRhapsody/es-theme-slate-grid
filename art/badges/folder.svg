@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 21.166666 24.341667" xmlns="http://www.w3.org/2000/svg">
+  <rect style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.51566374;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" id="rect5286" width="21.166666" height="24.341667" x="2.2368853e-07" y="-2.6645353e-15" transform="matrix(1, 0, 0, 1, -8.881784197001252e-16, 0)"/>
+  <g id="g16" transform="matrix(0.10079383850097656, 0, 0, 0.08235570788383484, -0.0004231762432027608, 0.04964061081409454)" style="fill:#d7d7d7;fill-opacity:1">
+    <rect x="3.0257001" y="2.9029" width="204.36" height="288.81" id="rect14" style="fill:#d7d7d7;fill-opacity:1;stroke-width:0.26458001"/>
+  </g>
+  <g id="g20" transform="matrix(0.10079383850097656, 0, 0, 0.08160464465618134, -0.015219360589981523, 0.13809160888195038)" style="fill:#0e0e0e;fill-opacity:1">
+    <rect x="7.7007999" y="7.7174001" width="194.89999" height="279.22" id="rect18" style="fill:#0e0e0e;fill-opacity:1;stroke-width:0.26458001"/>
+  </g>
+  <rect style="fill:#e6e6e6;fill-opacity:1;stroke-width:0.02649944" id="rect22" height="17.205626" width="17.540144" y="5.3001137" x="1.8323119" transform="matrix(1, 0, 0, 1, -8.881784197001252e-16, 0)"/>
+  <g id="g4775" transform="matrix(1, 0, 0, 1, -8.881784197001252e-16, -0.09891646355390549)">
+    <path id="rect4870-9" d="m 4.9236696,9.0905344 h 2.6740973 c 0,0 0.2592941,-0.01361 0.3396409,0.071079 0.1572854,0.1657858 0.3177964,0.4344024 0.3177964,0.4344024 l 0.1423486,0.2035059 c 0,0 0.092815,0.1187263 0.1630985,0.1641063 0.083435,0.05387 0.1786284,0.059488 0.1786284,0.059488 h 5.9050453 c 0.277074,0 0.496971,0.234563 0.500136,0.525884 l 0.085,7.824626 c 0.0032,0.291319 -0.223062,0.525882 -0.500136,0.525882 H 4.9236696 c -0.2770743,0 -0.5001343,-0.234544 -0.5001343,-0.525882 V 9.6164168 c 0,-0.2913387 0.22306,-0.5258824 0.5001343,-0.5258824 z" style="opacity:1;vector-effect:none;fill:#5d8fe9;fill-opacity:1;stroke:#282828;stroke-width:0.22886103;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"/>
+    <rect transform="matrix(1,0,-0.29926089,0.95417133,0,0)" rx="0.4841668" ry="0.50277889" y="12.58212" x="10.444011" height="7.2430573" width="10.805931" id="rect4870-1-3" style="opacity:1;vector-effect:none;fill:#659bf5;fill-opacity:1;stroke:#282828;stroke-width:0.23429266;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"/>
+  </g>
+  <text style="fill: rgb(230, 230, 230); font-family: Impact; font-size: 3px; text-anchor: middle; text-transform: capitalize; white-space: pre;" transform="matrix(1.6295969486236572, 0, 0, 1, -6.993924140930176, 0.045916005969047546)" x="10.798" y="3.956">FOLDER</text>
+</svg>
